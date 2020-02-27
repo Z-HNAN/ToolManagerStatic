@@ -11,13 +11,34 @@
   <!-- Bootstrap -->
   <link href="../../css/bootstrap.min.css" rel="stylesheet">
   <link href="../../css/layout.css" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
+  <script>
+    // 打开借阅模态框
+    function openBorrowModal(id) {
+      $('#borrow-modal').modal()
+      console.log(id)
+    }
+    // 打开报修模态框
+    function openRepairModal(id) {
+      $('#repair-modal').modal()
+      console.log(id)
+    }
+    // 打开归还模态框
+    function openRestoreModal(id) {
+      $('#restore-modal').modal()
+      console.log(id)
+    }
+  </script>
 </head>
 
 
 <body>
   <div class="content">
     <Header />
-    夹具归还列表
+    <ContentTable />
+    <BorrowModal />
+    <RepairModal />
+    <RestoreModal />
   </div>
   <script src="../../js/jquery.min.js"></script>
   <script src="../../js/bootstrap.min.js"></script>
