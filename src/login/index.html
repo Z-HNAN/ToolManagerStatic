@@ -10,12 +10,26 @@
 
   <!-- Bootstrap -->
   <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!--内部样式-->
+  <link href="./index.css" rel="stylesheet" />
 </head>
 
 
 <body>
   <div class="root">
-    login
+	  <div class="container-fluid">
+		  <div class="LoginTop">
+			  <h1>捷普工具夹系统</h1>
+			  <button class="btn btn-info">更多信息</button>
+		  </div>
+		  <div class="row">
+			  <div class="col-md-5"></div>
+			  <div class="col-md-2">
+				  <LoginForm />
+			  </div>
+			  <div class="col-md-5"></div>
+		  </div>
+	  </div>
   </div>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
