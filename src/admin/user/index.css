@@ -1,0 +1,30 @@
+.wrap {
+	padding: 30px;
+}
+
+.wrap p{
+	color: gray;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.wrap p + button {
+	margin-bottom: 20px;
+}
+
+.wrap form {
+	margin-bottom: 30px;
+}
+
+.wrap form div{
+	margin-right: 10px;
+}
+
+.wrap table a:hover{
+	color: darkblue;
+	text-decoration: none;
+}
+
+.wrap nav {
+	margin-left: 800px;
+}

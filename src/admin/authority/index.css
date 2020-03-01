@@ -1,0 +1,9 @@
+.wrap {
+	padding: 30px;
+}
+
+.wrap p {
+	color: gray;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
