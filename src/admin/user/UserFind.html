@@ -1,26 +1,33 @@
-<p>权限管理</p>
-<button type="button" class="btn btn-primary" 
-data-toggle="modal" data-target="#exampleModal" >查找员工</button>
-<!--点击按钮弹出框-->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">员工查询</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="control-label">员工号</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-        <button type="button" class="btn btn-primary">查询</button>
-      </div>
+<form class="form-inline clearfix">
+	<div class="formArea">
+		<div class="form-group">
+		  <label>Workcell:</label>
+		  <select class="form-control">
+		  	<option>下沙分公司1</option>
+		  	<option>下沙分公司2</option>
+		  	<option>下沙分公司3</option>
+		  </select>
+		</div>
+		<div class="form-group">
+		  <label for="pno">工号:</label>
+		  <input type="text" class="form-control" id="pno" placeholder="请输入工号">
+		</div>
+		<div class="form-group">
+		  <label>权限:</label>
+		  <select class="form-control">
+		  	<option>--选择权限--</option>
+		  	<option>权限1</option>
+		  	<option>权限2</option>
+		  	<option>权限3</option>
+		  </select>
+		</div>
+		<div class="form-group">
+		  <label for="name">姓名:</label>
+		  <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+		</div>
+	</div>
+    <div class="button">
+	    <button class="btn btn-primary" type="submit">搜索</button>
+	    <button class="btn btn-default">清除</button>
     </div>
-  </div>
-</div>
+</form>

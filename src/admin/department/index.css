@@ -1,25 +1,24 @@
 .wrap {
-	padding: 30px;
+	padding: 20px;
+	background-color: #fbfbfb;
+	margin: 20px;
+	border: 1px solid lightgray;
+	box-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
-.wrap form p{
-	color: gray;
-	font-weight: bold;
-	margin-bottom: 20px;
+.tableArea {
+	background: #fff;
+	border: 1px solid lightgray;
+	box-shadow: 0 1px 5px rgba(0,0,0,.1);
+	padding: 20px;
+	padding-bottom: 0
 }
 
-.wrap form {
-	margin-bottom: 30px;
-}
-.wrap form div{
-	margin-right: 10px;
+.tableArea .table {
+	margin-bottom: 0;
 }
 
-.wrap table a:hover{
-	color: darkblue;
-	text-decoration: none;
-}
-
-.wrap nav {
-	margin-left: 800px;
+.tableArea nav {
+	float: right;
+	margin-bottom: 0;
 }
