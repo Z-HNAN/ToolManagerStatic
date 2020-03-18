@@ -3,10 +3,15 @@
   "srcPublicJs": "./src/js",
   "srcPublicCss": "./src/css",
   "srcPublicImage": "./src/image",
+  "srcPublicFonts": "./src/fonts",
+  "srcPublicMedia": "./src/media",
+
   "dist": "./public",
   "distPublicJs": "./public/js",
   "distPublicCss": "./public/css",
   "distPublicImage": "./public/image",
+  "distPublicFonts": "./public/fonts",
+  "distPublicMedia": "./public/media",
 
   "port": 8000,
   "host": "0.0.0.0"
