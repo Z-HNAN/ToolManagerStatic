@@ -1,0 +1,32 @@
+.search-form {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+.content-table::before {
+  display: block;
+  height: 30px;
+  content: '';
+}
+
+.content-table {
+  margin: 20px 0 0;
+  padding-top: 30px;
+  background-color: #ffffff;
+}
+
+.content-table .action {
+  text-align: center;
+  width: 220px;
+}
+
+.content .table-pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+}
