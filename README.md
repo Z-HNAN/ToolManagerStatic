@@ -1,5 +1,14 @@
 # nppack-demo
 
+## demo page
+
+- login
+[https://z-hnan.github.io/ToolManagerStatic/public/login/index.html](https://z-hnan.github.io/ToolManagerStatic/public/login/index.html)
+
+- admin
+[https://z-hnan.github.io/ToolManagerStatic/public/admin/user/index.html](https://z-hnan.github.io/ToolManagerStatic/public/admin/user/index.html)
+
+
 ## start
 
 ```bash
