@@ -1,5 +1,5 @@
 .add {
-	padding: 10px 50px 20px;
+	margin-bottom: 10px;
 }
 
 .authorites li span {
@@ -9,7 +9,6 @@
 
 .wrap {
 	border: 1px solid lightgray;
-	margin: 10px 20px;
 	padding: 20px 20px 0;
 	background-color: #fbfbfb;
 	box-shadow: 0 1px 5px rgba(0,0,0,.1);
@@ -18,7 +17,6 @@
 .panel-title a {
 	display: inline-block;
 	width: 100px;
-	margin-right: 850px;
 }
 
 .panel-title button {
