@@ -18,7 +18,7 @@
 <body>
   <div class="root">
 	<!--弹窗-->
-	<!--点击按钮弹出框-->
+	<!--点击按钮弹出框 新增员工-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
@@ -86,7 +86,26 @@
 	      </div>
 	    </div>
 	  </div>
-	</div>
+</div>
+
+<!--model for myModal1 提示确定删除 -->
+<div class="modal fade" id="myModal1" tabindex="-1">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">提示:</h4>
+	      </div>
+	      <div class="modal-body">
+	        确认删除该员工吗?
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        <button type="button" class="btn btn-primary">确定</button>
+	      </div>
+	    </div>
+	  </div>
+</div>
     <div class="side-bar">
   <div class="logo">TMS</div>
   <ul class="nav nav-pills nav-stacked">
@@ -178,7 +197,7 @@
 		<td>Supervisor</td>
 		<td>
 			<a href="#" data-toggle="modal" data-target="#myModal">修改</a>
-			<a href="#">删除</a>
+			<a href="#" data-toggle="modal" data-target="#myModal1">删除</a>
 		</td>
 	</tr>
 	<tr>
@@ -189,7 +208,7 @@
 		<td>Supervisor</td>
 		<td>
 			<a href="#" data-toggle="modal" data-target="#myModal">修改</a>
-			<a href="#">删除</a>
+			<a href="#" data-toggle="modal" data-target="#myModal1">删除</a>
 		</td>
 	</tr>
 	<tr>
@@ -200,7 +219,7 @@
 		<td>Supervisor</td>
 		<td>
 			<a href="#" data-toggle="modal" data-target="#myModal">修改</a>
-			<a href="#">删除</a>
+			<a href="#" data-toggle="modal" data-target="#myModal1">删除</a>
 		</td>
 	</tr>
 	<tr>
@@ -211,7 +230,7 @@
 		<td>Supervisor</td>
 		<td>
 			<a href="#" data-toggle="modal" data-target="#myModal">修改</a>
-			<a href="#">删除</a>
+			<a href="#" data-toggle="modal" data-target="#myModal1">删除</a>
 		</td>
 	</tr>
 </table>
