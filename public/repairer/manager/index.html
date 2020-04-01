@@ -2,29 +2,30 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>TMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>TMS</title>
 
-  <!-- Bootstrap -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../css/layout.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/layout.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" />
 </head>
 
 
 <body>
-  <div class="root">
-    <div class="side-bar">
-  <div class="logo">TMS</div>
-  <ul class="nav nav-pills nav-stacked">
-    <li class="active"><a href="../manager/index.html">报修项管理</a></li>
-    <li><a href="../order/index.html">报修单管理</a></li>
-  </ul>
+    <div class="root">
+        <div class="side-bar">
+    <div class="logo">TMS</div>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="../order/index.html">检修列表</a></li>
+        <li class="active"><a href="../manager/index.html">检修管理</a></li>
+    </ul>
 </div>
-    <div class="content">
-      <nav class="header navbar navbar-default">
+        <div class="content">
+            <nav class="header navbar navbar-default">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -45,12 +46,168 @@
 
   </div>
 </nav>
-      报修项管理
+            <div class="title">
+                <h4>检修管理</h4>
+            </div>
+            <div class="panel-group border clearfix" id="accordion">
+    <div class="clearfix">
+        <button class="btn add-btn btn-primary" data-toggle="modal" data-target="#repair-category">新建检修类目</button>
     </div>
-  </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" id="headingZero">
+            <h4 class="panel-title clearfix">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseZero">
+                  检修标准一
+                </a>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#repair-delete">删除</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#repair-item">增加检修项</button>
+            </h4>
+        </div>
+        <div id="collapseZero" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" id="headingOne">
+            <h4 class="panel-title clearfix">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  检修标准二
+                 </a>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#repair-delete">删除</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#repair-item">增加检修项</button>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" id="headingTwo">
+            <h4 class="panel-title clearfix">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  检修标准三
+                 </a>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#repair-delete">删除</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#repair-item">增加检修项</button>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                    <li>
+                        <span>夹具是否有螺丝松动</span>
+                        <a data-toggle="modal" data-target="#repair-delete">删除</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <!--RepairCategory-->
+<div class="modal fade" id="repair-category" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">检修大类</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label for="categoryName">检修类名称</label>
+                    <input type="text" class="form-control" id="categoryName" placeholder="请输入检修类名" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="submit" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+<!--RepairItem-->
+<div class="modal fade" id="repair-item" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">检修项目</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label for="itemName">检修项目名称</label>
+                    <input class="form-control" type="text" id="itemName" placeholder="请输入检修项目名" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="submit" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--RepairDelete-->
+<div class="modal fade" id="repair-delete" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">提示:</h4>
+            </div>
+            <div class="modal-body">
+                确认删除吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 
 </html>
