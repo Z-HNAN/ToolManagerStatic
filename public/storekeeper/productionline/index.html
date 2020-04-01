@@ -2,32 +2,33 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>TMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>TMS</title>
 
-  <!-- Bootstrap -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../css/layout.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/layout.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" />
 </head>
 
 
 <body>
-  <div class="root">
-    <div class="side-bar">
-  <div class="logo">TMS</div>
-  <ul class="nav nav-pills nav-stacked">
-    <li><a href="../tool/index.html">夹具管理</a></li>
-    <li class="active"><a href="../productionline/index.html">生产线管理</a></li>
-    <li><a href="../purchase/index.html">采购单</a></li>
-    <li><a href="../destory/index.html">报废单</a></li>
-    <li><a href="../reapair/index.html">报修单</a></li>
-  </ul>
+    <div class="root">
+        <div class="side-bar">
+    <div class="logo">TMS</div>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="../tool/index.html">夹具查询</a></li>
+        <li class="active"><a href="../productionline/index.html">生产线管理</a></li>
+        <li><a href="../../storekeeper/purchase/purchaseList/index.html">采购管理</a></li>
+        <li><a href="../reapair/index.html">报修管理</a></li>
+        <li><a href="../destory/destroyList/index.html">报废管理</a></li>
+    </ul>
 </div>
-    <div class="content">
-      <nav class="header navbar navbar-default">
+        <div class="content">
+            <nav class="header navbar navbar-default">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -48,12 +49,134 @@
 
   </div>
 </nav>
-      生产线管理
+            <!--警告框-->
+<div class="alert alert-danger alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+  <strong>Tips:</strong> 输入错误.
+</div>
+            <div class="add clearfix">
+	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">新增生产线</button>
+</div>
+            <div class="find">
+	<form class="form-inline">
+		<input class="form-control" type="text" placeholder="生产线名称"/>
+		<button class="btn btn-primary">查询</button>
+	</form>
+</div>
+            <div class="title">
+                <h4>生产线列表</h4>
+            </div>
+            <div class="list clearfix">
+	<table class="table table-hover table-striped">
+		<tr>
+			<th>生产线名称</th>
+			<th>备注</th>
+			<th>操作</th>
+		</tr>
+		<tr>
+			<td>BLKA15-L2</td>
+			<td>BLKA15-L2夹具生产</td>
+			<td>
+				<a data-toggle="modal" data-target="#myModal">修改</a>
+				<a data-toggle="modal" data-target="#deleteModal">删除</a>
+			</td>
+		</tr>
+		<tr>
+			<td>BLKA15-L2</td>
+			<td>BLKA15-L2夹具生产</td>
+			<td>
+				<a data-toggle="modal" data-target="#myModal">修改</a>
+				<a data-toggle="modal" data-target="#deleteModal">删除</a>
+			</td>
+		</tr>
+		<tr>
+			<td>BLKA15-L2</td>
+			<td>BLKA15-L2夹具生产</td>
+			<td>
+				<a data-toggle="modal" data-target="#myModal">修改</a>
+				<a data-toggle="modal" data-target="#deleteModal">删除</a>
+			</td>
+		</tr>
+		<tr>
+			<td>BLKA15-L2</td>
+			<td>BLKA15-L2夹具生产</td>
+			<td>
+				<a data-toggle="modal" data-target="#myModal">修改</a>
+				<a data-toggle="modal" data-target="#deleteModal">删除</a>
+			</td>
+		</tr>
+	</table>
+	<nav>
+	  <ul class="pagination">
+	    <li class="disabled"><a href="#"><span>&laquo;</span></a></li>
+	    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+	    <li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#">6 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#">7 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#">8 <span class="sr-only">(current)</span></a></li>
+		<li><a href="#"><span>&raquo;</span></a></li>
+	  </ul>
+	</nav>
+</div>
+        </div>
+        <!--model 新增生产线-->
+        <!--model 新增生产线-->
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">生产线信息</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+			<div class="form-group">
+				<label for="name" class="col-sm-2 control-label">名称</label> 
+				<div class="col-sm-10">
+					<input type="text" id="name" class="form-control" placeholder="生产线名称"/> 
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="remark" class="col-sm-2 control-label">备注</label> 
+				<div class="col-sm-10">
+					<input type="text" id="remark" class="form-control" placeholder="备注"/> 
+				</div>
+			</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="submit" class="btn btn-primary">确定</button>
+      </div>
     </div>
   </div>
+</div>
 
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+<!--model 删除提示-->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">生产线信息</h4>
+      </div>
+      <div class="modal-body">
+        确认删除该生产线吗？
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="submit" class="btn btn-primary">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 
 </html>

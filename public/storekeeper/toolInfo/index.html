@@ -2,20 +2,23 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>TMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>TMS</title>
 
-  <!-- Bootstrap -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/layout.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" />
 </head>
 
 
 <body>
-  <div class="root">
-    <nav class="header navbar navbar-default">
+    <div class="root">
+        <div class="content">
+            <nav class="header navbar navbar-default">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -36,10 +39,145 @@
 
   </div>
 </nav>
-    夹具管理详情
-  </div>
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+            <div class="title">
+                <h4>夹具信息</h4>
+            </div>
+            <div class="toolInfo row">
+    <p>
+        <a href="../tool/index.html" class="btn btn-primary">返回首页</a>
+    </p>
+    <div class="col-md-7">
+        <div class="mustInfo">
+            <div class="row">
+                <h4 class="col-md-6">EF2020</h4>
+                <h4 class="col-md-6">MOD 3XM2 调谐夹具</h4>
+            </div>
+            <p>
+                <span>F:&nbsp;JABIL FU</span>
+                <span>M:&nbsp;MOD 3XM2</span>
+            </p>
+            <p>
+                F:&nbsp;PNA90320/1 PNA903 20/2 PNA90322/1
+            </p>
+            <p class="text-muted">(必要信息)</p>
+        </div>
+        <div class="otherInfo">
+            <p>用途:&nbsp;打调谐盖板打调谐盖板打调谐盖板打调谐盖板</p>
+            <p>UPL:&nbsp;3(个)</p>
+            <p>PMPeriod:&nbsp;30(天)</p>
+            <p class="text-muted">(补充信息)</p>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="imgArea">
+            <img src="" />
+        </div>
+    </div>
+    <p class="text-muted">(类别信息)</p>
+</div>
+            <div class="toolList">
+	<button class="btn btn-primary clearfix" data-toggle="modal" 
+	data-target="#myModal">添加夹具</button>
+	<table class="table table-hover table-striped">
+		<tr>
+			<th>Code</th>
+			<th>柜号</th>
+			<th>创建日期</th>
+			<th>入库单</th>
+			<th>操作</th>
+		</tr>
+		<tr>
+			<td>EF2189-1</td>
+			<td>16A4</td>
+			<td>2020-3-11 21:16</td>
+			<td>BO1378473387</td>
+			<td>
+				<a data-toggle="modal" data-target="#deleteModal">删除 |</a>
+				<a data-toggle="modal" data-target="#myModal">修改</a>
+			</td>
+		</tr>
+		<tr>
+			<td>EF2189-1</td>
+			<td>16A4</td>
+			<td>2020-3-11 21:16</td>
+			<td>BO1378473387</td>
+			<td>
+				<a data-toggle="modal" data-target="#deleteModal">删除 |</a>
+				<a data-toggle="modal" data-target="#myModal">修改</a>
+			</td>
+		</tr>
+		<tr>
+			<td>EF2189-1</td>
+			<td>16A4</td>
+			<td>2020-3-11 21:16</td>
+			<td>BO1378473387</td>
+			<td>
+				<a data-toggle="modal" data-target="#deleteModal">删除 |</a>
+				<a data-toggle="modal" data-target="#myModal">修改</a>
+			</td>
+		</tr>
+	</table>
+</div>
+        </div>
+        <!--model新增夹具-->
+<div class="modal fade" id="myModal" tabindex="-1">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" ><span>&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">夹具信息</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form class="form-horizontal">
+				<div class="form-group">
+					<label for="code" class="col-sm-2 control-label">夹具Code</label> 
+					<div class="col-sm-10">
+						<input type="text" id="code" class="form-control" placeholder="Code"/> 
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="position" class="col-sm-2 control-label">夹具位置</label> 
+					<div class="col-sm-10">
+						<input type="text" id="position" class="form-control" placeholder="夹具位置"/> 
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="toolIn" class="col-sm-2 control-label">入库单</label> 
+					<div class="col-sm-10">
+						<input type="text" id="toolIn" class="form-control" placeholder="入库单"/> 
+					</div>
+				</div>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        <button type="submit" class="btn btn-primary">确定</button>
+	      </div>
+	    </div>
+	  </div>
+</div>
+
+<!--model 删除提示-->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">夹具信息</h4>
+	      </div>
+	      <div class="modal-body">
+	       确认删除该夹具吗？
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        <button type="button" class="btn btn-primary">确定</button>
+	      </div>
+	    </div>
+	  </div>
+</div>
+    </div>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,62 @@
+.alert {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.title {
+	background-color: #4777e9;
+	width: 97%;
+	height: 40px;
+	margin: 0px auto;
+	boder: 1px solid darkblue;
+	box-shadow: 1px 1px 3px #6588d1;
+	border-radius: 5px;
+	color: #f8fafc;
+}
+
+.title h4 {
+	height: 100%;
+	line-height: 40px;
+	padding-left: 30px;
+}
+
+.toolFind, .toolList {
+	background-color: #fffeff;
+	width: 97%;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 3px 3px rgba(0,0,0,.1);
+	position: relative;
+}
+
+.input{
+	display: flex;
+	justify-content: space-between;
+}
+
+.toolFind .form-inline textarea {
+	width: 300px;
+	margin: 20px 30px 0px 0;
+}
+
+.toolFind button {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+}
+
+.toolList .table {
+	margin-bottom: 0;
+}
+
+.toolList table a:hover {
+	text-decoration: none;
+	color: #0099FF;
+	cursor: pointer;
+}
+
+.toolList nav {
+	float: right;
+	margin-bottom: -15px;
+}

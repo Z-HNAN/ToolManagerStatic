@@ -2,32 +2,33 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>TMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>TMS</title>
 
-  <!-- Bootstrap -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../css/layout.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/layout.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" />
 </head>
 
 
 <body>
-  <div class="root">
-    <div class="side-bar">
-  <div class="logo">TMS</div>
-  <ul class="nav nav-pills nav-stacked">
-    <li><a href="../tool/index.html">夹具管理</a></li>
-    <li><a href="../productionline/index.html">生产线管理</a></li>
-    <li><a href="../purchase/index.html">采购单</a></li>
-    <li><a href="../destory/index.html">报废单</a></li>
-    <li class="active"><a href="../reapair/index.html">报修单</a></li>
-  </ul>
+    <div class="root">
+        <div class="side-bar">
+    <div class="logo">TMS</div>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="../tool/index.html">夹具查询</a></li>
+        <li><a href="../productionline/index.html">生产线管理</a></li>
+        <li><a href="../../storekeeper/purchase/purchaseList/index.html">采购管理</a></li>
+        <li class="active"><a href="../reapair/index.html">报修管理</a></li>
+        <li><a href="../destory/destroyList/index.html">报废管理</a></li>
+    </ul>
 </div>
-    <div class="content">
-      <nav class="header navbar navbar-default">
+        <div class="content">
+            <nav class="header navbar navbar-default">
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -48,12 +49,99 @@
 
   </div>
 </nav>
-      夹具提交报修单
+            <div class="title">
+                <h4>报修处理</h4>
+            </div>
+            <!--一个.order对应一次报修申请-->
+<div class="order clearfix border">
+    <table class="table table-striped">
+        <tr>
+            <th>报修器件</th>
+            <th>报修人</th>
+            <th>申请时间</th>
+            <th>报修备注</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>EF0789-1</td>
+            <td>赵大锤</td>
+            <td>2020-03-29</td>
+            <td>零件松动</td>
+            <td>
+                <a data-toggle="modal" data-target="#orderModal">立即处理</a>
+            </td>
+        </tr>
+        <tr>
+            <td>EF0789-1</td>
+            <td>赵大锤</td>
+            <td>2020-03-29</td>
+            <td>零件松动</td>
+            <td>
+                <a data-toggle="modal" data-target="#orderModal">立即处理</a>
+            </td>
+        </tr>
+        <tr>
+            <td>EF0789-1</td>
+            <td>赵大锤</td>
+            <td>2020-03-29</td>
+            <td>零件松动</td>
+            <td>
+                <a data-toggle="modal" data-target="#orderModal">立即处理</a>
+            </td>
+        </tr>
+        <tr>
+            <td>EF0789-1</td>
+            <td>赵大锤</td>
+            <td>2020-03-29</td>
+            <td>零件松动</td>
+            <td>
+                <a data-toggle="modal" data-target="#orderModal">立即处理</a>
+            </td>
+        </tr>
+    </table>
+    <nav>
+        <ul class="pagination">
+            <li class="disabled"><a href="#"><span>&laquo;</span></a></li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">6 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">7 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">8 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#"><span>&raquo;</span></a></li>
+        </ul>
+    </nav>
+</div>
+        </div>
+        <!--model 采购申请-->
+<div class="modal fade" id="orderModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">申请信息</h4>
+            </div>
+            <div class="modal-body">
+                <div class="reply">
+                    <form class="form-inline">
+                        <textarea class="form-control" placeholder="报修申请回复备注"></textarea>
+                        <button type="submit" class="btn btn-danger">审核拒绝</button>
+                        <button type="submit" class="btn btn-primary">审核通过</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+</div>
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 
 </html>
