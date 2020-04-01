@@ -2,26 +2,25 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>TMS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>TMS</title>
 
-  <!-- Bootstrap -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../css/layout.css" rel="stylesheet">
-  <link href="./index.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/layout.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" />
 </head>
 
 
 <body>
-  <div class="content">
-    <nav class="header navbar navbar-default">
+    <div class="root">
+        <div class="content">
+            <nav class="header navbar navbar-default">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li><a href="../restore/index.html">归还夹具</a></li>
-    </ul>
+
     <div class="navbar-header">
       <a class="navbar-brand" href="#">捷普-工夹具全寿命智能管理系统</a>
     </div>
@@ -40,92 +39,181 @@
 
   </div>
 </nav>
-    <form class="search-form form-inline">
-  <div class="form-group">
-    <label for="FamilyNo">FamilyNo</label>
-    <input type="text" class="form-control" id="FamilyNo" placeholder="">
+            <div class="title">
+                <h4>夹具详情</h4>
+            </div>
+            <div class="toolInfo border row">
+    <p><a href="../toolBorrow/index.html" class="btn btn-primary">返回首页</a></p>
+    <div class="col-md-7">
+        <div class="mustInfo">
+            <div class="row">
+                <h4 class="col-md-6">EF2020</h4>
+                <h4 class="col-md-6">MOD 3XM2 调谐夹具</h4>
+            </div>
+            <p>
+                <span>F:&nbsp;JABIL FU</span>
+                <span>M:&nbsp;MOD 3XM2</span>
+            </p>
+            <p>
+                F:&nbsp;PNA90320/1 PNA903 20/2 PNA90322/1
+            </p>
+            <p class="text-muted">(必要信息)</p>
+        </div>
+        <div class="otherInfo">
+            <p>用途:&nbsp;打调谐盖板打调谐盖板打调谐盖板打调谐盖板</p>
+            <p>UPL:&nbsp;3(个)</p>
+            <p>PMPeriod:&nbsp;30(天)</p>
+            <p class="text-muted">(补充信息)</p>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="imgArea">
+            <img src="" />
+        </div>
+    </div>
+    <p class="text-muted">(类别信息)</p>
+</div>
+            <div class="panel-group border" id="accordion">
+	  <div class="panel panel-default">
+	    <div class="panel-heading" id="headingZero">
+	      <h4 class="panel-title clearfix">
+	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" >
+	          EF0789-1
+	        </a>
+			<button class="btn btn-default">在库</button>
+	  		<button class="btn btn-primary" data-toggle="modal" data-target="#repairModal">报修</button>
+	  		<button class="btn btn-primary" data-toggle="modal" data-target="#borrowModal">借用</button>
+	      </h4>
+	    </div>
+	    <div id="collapseZero" class="panel-collapse collapse" >
+	      <div class="panel-body">
+	  		<ul>
+				<li><span>使用次数:</span>3</li>
+				<li><span>检修次数:</span>0</li>
+				<li><span>维修次数:</span>0</li>
+				<li><span>入库订单:</span>BO2382783478657</li>
+				<li><span>记录时间:</span>2020-03-23 22:00</li>
+				<li><span>上次借用时间:</span>2020-03-23 22:00</li>
+				<li><span>所在库位:</span>16-A2</li>
+			</ul> 
+	      </div>
+	    </div>
+	  </div>
+	  <div class="panel panel-default">
+	    <div class="panel-heading" id="headingOne">
+	      <h4 class="panel-title">
+	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+	          EF0789-2
+	        </a>
+			<button class="btn btn-default">借出</button>
+			<button class="btn btn-primary" data-toggle="modal" data-target="#repairModal">报修</button>
+			<button class="btn btn-primary disabled" data-toggle="modal" data-target="#borrowModal">借用</button>
+	      </h4>
+	    </div>
+	    <div id="collapseOne" class="panel-collapse collapse">
+	      <div class="panel-body">
+			  <ul>
+				 <li><span>使用次数:</span>3</li>
+				 <li><span>检修次数:</span>0</li>
+				 <li><span>维修次数:</span>0</li>
+				 <li><span>入库订单:</span>BO2382783478657</li>
+				 <li><span>记录时间:</span>2020-03-23 22:00</li>
+				 <li><span>上次借用时间:</span>2020-03-23 22:00</li>
+				 <li><span>借用人:</span>赵大锤</li>
+				 <li><span>归还时间:</span>2020-03-23 22:00</li>
+				 <li><span>所在生产线:</span>BLKA15-L2</li>
+				 <li><span>所在库位:</span>16-A2</li>
+			  </ul>
+	      </div>
+	    </div>
+	  </div>
+</div>
+        </div>
+        <!--Borrow Modal-->
+<div class="modal fade" id="borrowModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">申请借用</h4>
+      </div>
+      <div class="modal-body">
+		 <form class="form-horizontal" method="post">
+			 <!--根据用户信息会自动填写-->
+			 <div class="form-group">
+				 <label for="toolname" class="col-sm-2 control-label">借用器件</label>
+				 <div class="col-sm-10">
+					<input class="form-control" id="toolname" value="EF0789-1" disabled>
+				 </div>
+			 </div>
+			 <div class="form-group">
+				 <label for="username" class="col-sm-2 control-label">借用人</label>
+				 <div class="col-sm-10">
+					<input class="form-control" id="username" value="赵大锤" disabled> 
+				 </div>
+			 </div>
+			 <div class="form-group">
+				 <label for="productLine" class="col-sm-2 control-label">生产线</label>
+				 <div class="col-sm-10">
+					<input type="text" class="form-control" id="productLine" value="BLAK15-L2" disabled> 
+				 </div>
+			 </div>
+			 <div class="form-group">
+				 <label for="return" class="col-sm-2 control-label">归还时间</label>
+				 <div class="col-sm-10">
+					<input type="date" class="form-control" id="return" /> 
+				 </div>
+			 </div>
+		 </form>
+    </div>
+	<div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	    <button type="submit" class="btn btn-primary">确定</button>
+	</div>
+   </div>
+   </div>
+</div>
+        <!--Repair Modal-->
+<div class="modal fade" id="repairModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">申请报修</h4>
+      </div>
+      <div class="modal-body">
+		 <form class="form-horizontal" method="post">
+			 <!--根据用户信息会自动填写-->
+			 <div class="form-group">
+				 <label for="toolname" class="col-sm-2 control-label">报修器件</label>
+				 <div class="col-sm-10">
+					<input class="form-control" id="toolname" value="EF0789-1" disabled>
+				 </div>
+			 </div>
+			 <div class="form-group">
+				 <label for="username" class="col-sm-2 control-label">报修人</label>
+				 <div class="col-sm-10">
+					<input class="form-control" id="username" value="赵大锤" disabled> 
+				 </div>
+			 </div>
+			 <div class="form-group">
+				 <label for="reason" class="col-sm-2 control-label">报修原因</label>
+				 <div class="col-sm-10">
+					 <textarea class="form-control" placeholder="报修原因"></textarea>
+				 </div>
+			 </div>
+		 </form>
+      </div>
+	<div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	    <button type="submit" class="btn btn-primary">确定</button>
+	</div>
+   </div>
   </div>
-  <div class="form-group">
-    <label for="ModelNo">ModelNo</label>
-    <input type="text" class="form-control" id="ModelNo" placeholder="">
-  </div>
-  <div class="form-group">
-    <label for="PartNo">PartNo</label>
-    <input type="text" class="form-control" id="PartNo" placeholder="">
-  </div>
-  <div class="form-group">
-    <label for="Code">Code</label>
-    <input type="text" class="form-control" id="Code" placeholder="">
-  </div>
-  <button type="submit" class="btn btn-primary">查询夹具</button>
-</form>
-    <table class="content-table table table-striped">
-  <tr>
-    <th>Code</th>
-    <th>F&M&p</th>
-    <th>Name</th>
-    <th>库存</th>
-    <th style="text-align: center;">操作</th>
-  </tr>
-  <tr>
-    <td>EF1289</td>
-    <td>La123</td>
-    <td>LALALALALALA-description</td>
-    <td>2/5</td>
-    <td class="action">
-      <button type="button" class="btn btn-link">查看详情</button>
-    </td>
-  </tr>
-  <tr>
-    <td>EF1288</td>
-    <td>La456</td>
-    <td>LALALALALALA-description</td>
-    <td>2/5</td>
-    <td class="action">
-      <button type="button" class="btn btn-link">查看详情</button>
-    </td>
-  </tr>
-  <tr>
-    <td>EF1287</td>
-    <td>La1789</td>
-    <td>LALALALALALA-description</td>
-    <td>2/5</td>
-    <td class="action">
-      <button type="button" class="btn btn-link">查看详情</button>
-    </td>
-  </tr>
-  <tr>
-    <td>EF1287</td>
-    <td>La1789</td>
-    <td>LALALALALALA-description</td>
-    <td>2/5</td>
-    <td class="action">
-      <button type="button" class="btn btn-link">查看详情</button>
-    </td>
-  </tr>
-</table>
-<nav class="table-pagination">
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-  </div>
-  <script src="../../js/jquery.min.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
+</div>
+    </div>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 
 </html>

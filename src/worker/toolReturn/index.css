@@ -1,0 +1,13 @@
+.table a:hover {
+    color: #0099FF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table {
+    padding: 10px;
+}
+
+.border .btn {
+    margin-bottom: 20px;
+}

@@ -17,29 +17,16 @@
 
 <body>
     <div class="root">
-        <!--model-->
-        <Model />
-        <SideBar />
         <div class="content">
             <Header />
-            <Alert />
             <div class="title">
-                <h4>夹具查询</h4>
+                <h4>夹具详情</h4>
             </div>
-            <ToolFind />
-            <ToolList />
+            <ToolInfo />
         </div>
     </div>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <script>
-        window.addEventListener('load', function() {
-            // 给table中的popover 都添加了自定义的类名 .table-btn-popover
-
-            // 开启
-            $('.table-btn-popover').popover()
-        })
-    </script>
 </body>
 
 </html>

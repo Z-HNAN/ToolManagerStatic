@@ -54,43 +54,6 @@
     background-color: #68b8ed;
 }
 
-.panel-title .btn {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.panel-title button,
-.panel-title a {
-    margin-right: 20px;
-}
-
-.panel-title .btn-primary {
-    float: right;
-}
-
-.panel-body ul {
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.panel-body ul li {
-    padding-left: 10px;
-    color: gray;
-    width: 16.66%;
-    margin-top: 10px;
-}
-
-.panel-body ul li span {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.panel-body ul li:last-child {
-    color: #0099FF;
-}
-
 .toolInfo p {
     margin-left: 15px;
 }

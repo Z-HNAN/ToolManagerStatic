@@ -1,0 +1,47 @@
+.alert {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.input{
+	display: flex;
+	justify-content: space-between;
+}
+
+.toolFind {
+	margin-bottom: 20px;
+}
+
+.toolFind .form-inline textarea {
+	width: 300px;
+	margin: 20px 30px 0px 0;
+}
+
+.toolFind button {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+}
+
+.toolFind p, .toolList p{
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.toolList .table {
+	margin-bottom: 0;
+}
+
+.toolList table a:hover {
+	text-decoration: none;
+	color: #0099FF;
+	cursor: pointer;
+}
+
+.toolList nav {
+	float: right;
+	margin-bottom: -15px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>TMS</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/layout.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="root">
+        <div class="content">
+            <nav class="header navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">捷普-工夹具全寿命智能管理系统</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">赵大锤 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">退出登录</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+            <div class="title">
+                <h4>夹具归还列表</h4>
+            </div>
+            <div class="border">
+    <a href="../toolBorrow/index.html" class="btn btn-primary">返回首页</a>
+    <table class="table table-striped">
+        <tr>
+            <th>Code</th>
+            <th>借出时间</th>
+            <th>归还时间</th>
+            <th>归还库位</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>EF0789-1</td>
+            <td>2020-03-23 18:00</td>
+            <td>2020-03-24 18:00</td>
+            <td>16-A2</td>
+            <td>
+                <a data-toggle="modal" data-target="#returnModal">点击归还</a>
+            </td>
+        </tr>
+        <tr>
+            <td>EF0789-1</td>
+            <td>2020-03-23 18:00</td>
+            <td>2020-03-24 18:00</td>
+            <td>16-A2</td>
+            <td>
+                <a data-toggle="modal" data-target="#returnModal">点击归还</a>
+            </td>
+        </tr>
+        <tr>
+            <td>EF0789-1</td>
+            <td>2020-03-23 18:00</td>
+            <td>2020-03-24 18:00</td>
+            <td>16-A2</td>
+            <td>
+                <a data-toggle="modal" data-target="#returnModal">点击归还</a>
+            </td>
+        </tr>
+    </table>
+</div>
+        </div>
+        <!--Return Modal-->
+<div class="modal fade" id="returnModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">夹具归还</h4>
+      </div>
+      <div class="modal-body">
+		 确认归还吗?
+      </div>
+	<div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	    <button type="button" class="btn btn-primary">确定</button>
+	</div>
+   </div>
+  </div>
+</div>
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+
+</html>
