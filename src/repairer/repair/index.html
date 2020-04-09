@@ -17,33 +17,18 @@
 
 <body>
     <div class="root">
-        <!--model-->
-        <Model />
         <div class="content">
             <Header />
-            <Alert />
-			<div class="clearfix tool-return">
-				<a href="../toolReturn/index.html">
-					<button class="btn btn-primary">夹具归还</button>
-				</a>
-			</div>
             <div class="title">
-                <h4>夹具查询</h4>
+                <h4>检修详情</h4>
             </div>
-            <ToolFind />
-            <ToolList />
+            <ToolInfo />
+			<RepairRemark />
+			<RepairForm />
         </div>
     </div>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <script>
-        window.addEventListener('load', function() {
-            // 给table中的popover 都添加了自定义的类名 .table-btn-popover
-
-            // 开启
-            $('.table-btn-popover').popover()
-        })
-    </script>
 </body>
 
 </html>
