@@ -2,25 +2,25 @@
 
 ## demo page
 
-- login
+- login(登录)
 [https://z-hnan.github.io/ToolManagerStatic/public/login/index.html](https://z-hnan.github.io/ToolManagerStatic/public/login/index.html)
 
-- worker(OⅠ)
-[https://z-hnan.github.io/ToolManagerStatic/public/worker/toolBorrow/index.html](https://z-hnan.github.io/ToolManagerStatic/public/worker/toolBorrow/index.html)
+- worker(OⅠ)(产线员工)
+[https://z-hnan.github.io/ToolManagerStatic/public/worker/toolInfo/index.html](https://z-hnan.github.io/ToolManagerStatic/public/worker/toolInfo/index.html)
 
-- storekeeper(OⅡ)
+- storekeeper(OⅡ)(仓库管理员)
 [https://z-hnan.github.io/ToolManagerStatic/public/storekeeper/tool/index.html](https://z-hnan.github.io/ToolManagerStatic/public/storekeeper/tool/index.html)
 
-- supervisor
-[https://z-hnan.github.io/ToolManagerStatic/public/storekeeper/tool/index.html](https://z-hnan.github.io/ToolManagerStatic/public/storekeeper/tool/index.html)
+- supervisor(监管员)
+[https://z-hnan.github.io/ToolManagerStatic/public/supervisor/manager/create/index.html](https://z-hnan.github.io/ToolManagerStatic/public/supervisor/manager/create/index.html)
 
-- manager
+- manager(经理)
 [https://z-hnan.github.io/ToolManagerStatic/public/manager/order/index.html](https://z-hnan.github.io/ToolManagerStatic/public/manager/order/index.html)
 
-- repair
+- repairer(维修员)
 [https://z-hnan.github.io/ToolManagerStatic/public/repairer/manager/index.html](https://z-hnan.github.io/ToolManagerStatic/public/repairer/manager/index.html)
 
-- admin
+- admin(管理员)
 [https://z-hnan.github.io/ToolManagerStatic/public/admin/user/index.html](https://z-hnan.github.io/ToolManagerStatic/public/admin/user/index.html)
 
 
