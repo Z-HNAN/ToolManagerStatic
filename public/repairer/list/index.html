@@ -20,9 +20,9 @@
         <div class="side-bar">
     <div class="logo">TMS</div>
     <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="../order/index.html">检修列表</a></li>
+        <li><a href="../order/index.html">检修列表</a></li>
         <li><a href="../manager/index.html">检修管理</a></li>
-		<li><a href="../list/index.html">维修列表</a></li>
+		<li class="active"><a href="../list/index.html">维修列表</a></li>
     </ul>
 </div>
         <div class="content">
@@ -48,7 +48,7 @@
   </div>
 </nav>
             <div class="title">
-                <h4>检修列表</h4>
+                <h4>维修列表</h4>
             </div>
             <div class="border clearfix">
     <table class="table table-striped">
@@ -56,43 +56,59 @@
             <th>Code</th>
             <th>柜号</th>
             <th>创建日期</th>
-            <th>停留时间</th>
+            <th>备注</th>
             <th>操作</th>
         </tr>
         <tr>
             <td>EF2189-1</td>
             <td>16A-4</td>
             <td>2020-03-29</td>
-            <td>30天</td>
             <td>
-                <a href="../repair/index.html">开始检查</a>
+                <button type="button" class="btn btn-link  table-btn-popover" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="true" data-content="螺丝是否松动:通过<br/>螺丝是否松动:通过<br/>螺丝是否松动:通过">
+                    零件维修完成
+                </button>
+            </td>
+            <td>
+                <a data-toggle="modal" data-target="#repairModel">完成维修</a>
             </td>
         </tr>
         <tr>
             <td>EF2189-1</td>
             <td>16A-4</td>
             <td>2020-03-29</td>
-            <td>30天</td>
             <td>
-                <a href="../repair/index.html">开始检查</a>
+                <button type="button" class="btn btn-link  table-btn-popover" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="true" data-content="螺丝是否松动:通过<br/>螺丝是否松动:通过<br/>螺丝是否松动:通过">
+                    零件维修完成
+                </button>
+            </td>
+            <td>
+                <a data-toggle="modal" data-target="#repairModel">完成维修</a>
             </td>
         </tr>
         <tr>
             <td>EF2189-1</td>
             <td>16A-4</td>
             <td>2020-03-29</td>
-            <td>30天</td>
             <td>
-                <a href="../repair/index.html">开始检查</a>
+               <button type="button" class="btn btn-link  table-btn-popover" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="true" data-content="螺丝是否松动:不通过<br/>螺丝是否松动:通过<br/>螺丝是否松动:不通过">
+                   零件维修未通过
+               </button>
+            </td>
+            <td>
+                <a data-toggle="modal" data-target="#repairModel">完成维修</a>
             </td>
         </tr>
         <tr>
             <td>EF2189-1</td>
             <td>16A-4</td>
             <td>2020-03-29</td>
-            <td>30天</td>
             <td>
-                <a href="../repair/index.html">开始检查</a>
+                <button type="button" class="btn btn-link  table-btn-popover" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-html="true" data-content="螺丝是否松动:通过<br/>螺丝是否松动:通过<br/>螺丝是否松动:通过">
+                    零件维修完成
+                </button>
+            </td>
+            <td>
+                <a data-toggle="modal" data-target="#repairModel">完成维修</a>
             </td>
         </tr>
     </table>
@@ -112,9 +128,35 @@
     </nav>
 </div>
         </div>
+		<!--model 检修确定-->
+	<div class="modal fade" id="repairModel" tabindex="-1">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">维修确认</h4>
+	      </div>
+	      <div class="modal-body">
+	        确定检修完成？
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        <button type="submit" class="btn btn-primary">确定</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
     </div>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
+	<script>
+	    window.addEventListener('load', function() {
+	        // 给table中的popover 都添加了自定义的类名 .table-btn-popover
+	
+	        // 开启
+	        $('.table-btn-popover').popover()
+	    })
+	</script>
 </body>
 
 </html>
