@@ -92,8 +92,11 @@
 			<td>2020-3-11 21:16</td>
 			<td>BO1378473387</td>
 			<td>
-				<a data-toggle="modal" data-target="#deleteModal">删除 |</a>
+				<a data-toggle="modal" data-target="#deleteModal">删除</a>
+				<span>|</span>
 				<a data-toggle="modal" data-target="#myModal">修改</a>
+				<span>|</span>
+				<a data-toggle="modal" data-target="#destoryModal">报废</a>
 			</td>
 		</tr>
 		<tr>
@@ -102,8 +105,11 @@
 			<td>2020-3-11 21:16</td>
 			<td>BO1378473387</td>
 			<td>
-				<a data-toggle="modal" data-target="#deleteModal">删除 |</a>
-				<a data-toggle="modal" data-target="#myModal">修改</a>
+			<a data-toggle="modal" data-target="#deleteModal">删除</a>
+			<span>|</span>
+			<a data-toggle="modal" data-target="#myModal">修改</a>
+			<span>|</span>
+			<a data-toggle="modal" data-target="#destoryModal">报废</a>
 			</td>
 		</tr>
 		<tr>
@@ -112,8 +118,11 @@
 			<td>2020-3-11 21:16</td>
 			<td>BO1378473387</td>
 			<td>
-				<a data-toggle="modal" data-target="#deleteModal">删除 |</a>
+				<a data-toggle="modal" data-target="#deleteModal">删除</a>
+				<span>|</span>
 				<a data-toggle="modal" data-target="#myModal">修改</a>
+				<span>|</span>
+				<a data-toggle="modal" data-target="#destoryModal">报废</a>
 			</td>
 		</tr>
 	</table>
@@ -174,6 +183,25 @@
 	      </div>
 	    </div>
 	  </div>
+</div>
+
+<!--model 报废提示-->
+<div class="modal fade" id="destoryModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">报废夹具</h4>
+			</div>
+			<div class="modal-body">
+				确认报废该夹具吗？
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+				<button type="button" class="btn btn-primary">确定</button>
+			</div>
+		</div>
+	</div>
 </div>
     </div>
     <script src="../../js/jquery.min.js"></script>
