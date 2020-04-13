@@ -86,6 +86,10 @@
     background-color: #fff;
 }
 
+.toolList .td_center {
+    text-align: center;
+}
+
 .toolList a:hover {
     text-decoration: none;
     color: #0099FF;
