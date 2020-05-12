@@ -2,16 +2,14 @@
 	margin-bottom: 10px;
 }
 
+.add .selectForm {
+	float: right;
+	width: 150px;
+}
+
 .authorites li span {
 	display: inline-block;
 	margin-right: 30px;
-}
-
-.wrap {
-	border: 1px solid lightgray;
-	padding: 20px 20px 0;
-	background-color: #fbfbfb;
-	box-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
 
 .panel-title a {
@@ -27,3 +25,23 @@ ul li {
 	margin-bottom: 10px;
 }
 
+@media screen and (max-width: 580px) {
+	.wrap {
+		margin-top: 10px;
+	}
+	.panel-title .btn {
+		margin-right: 5px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	/*屏幕宽度小于等于580px才会显示该样式*/
+	.form-group .btn-md {
+		margin-left: 15px;
+		margin-top: 10px;
+	}
+	
+	.panel-title a {
+		width: 80px;
+	}
+}

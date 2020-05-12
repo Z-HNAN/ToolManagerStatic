@@ -42,7 +42,7 @@
             <div class="title">
                 <h4>夹具信息</h4>
             </div>
-            <div class="toolInfo row">
+            <div class="toolInfo border row">
     <p>
         <a href="../tool/index.html" class="btn btn-primary">返回首页</a>
     </p>
@@ -73,9 +73,8 @@
             <img src="" />
         </div>
     </div>
-    <p class="text-muted">(类别信息)</p>
 </div>
-            <div class="toolList">
+            <div class="toolList border table-responsive">
 	<button class="btn btn-primary clearfix" data-toggle="modal" 
 	data-target="#myModal">添加夹具</button>
 	<table class="table table-hover table-striped">
@@ -84,6 +83,7 @@
 			<th>柜号</th>
 			<th>创建日期</th>
 			<th>入库单</th>
+			<th>详情</th>
 			<th class="td_center">操作</th>
 		</tr>
 		<tr>
@@ -91,12 +91,13 @@
 			<td>16A4</td>
 			<td>2020-3-11 21:16</td>
 			<td>BO1378473387</td>
+			<td>
+				<a href="../record/index.html">查看</a>
+			</td>
 			<td class="td_center">
 				<a data-toggle="modal" data-target="#deleteModal">删除</a>
 				<span>|</span>
 				<a data-toggle="modal" data-target="#myModal">修改</a>
-				<span>|</span>
-				<a data-toggle="modal" data-target="#destoryModal">报废</a>
 			</td>
 		</tr>
 		<tr>
@@ -104,12 +105,13 @@
 			<td>16A4</td>
 			<td>2020-3-11 21:16</td>
 			<td>BO1378473387</td>
+			<td>
+				<a href="../record/index.html">查看</a>
+			</td>
 			<td class="td_center">
 			<a data-toggle="modal" data-target="#deleteModal">删除</a>
 			<span>|</span>
 			<a data-toggle="modal" data-target="#myModal">修改</a>
-			<span>|</span>
-			<a data-toggle="modal" data-target="#destoryModal">报废</a>
 			</td>
 		</tr>
 		<tr>
@@ -117,12 +119,13 @@
 			<td>16A4</td>
 			<td>2020-3-11 21:16</td>
 			<td>BO1378473387</td>
+			<td>
+				<a href="../record/index.html">查看</a>
+			</td>
 			<td class="td_center">
 				<a data-toggle="modal" data-target="#deleteModal">删除</a>
 				<span>|</span>
 				<a data-toggle="modal" data-target="#myModal">修改</a>
-				<span>|</span>
-				<a data-toggle="modal" data-target="#destoryModal">报废</a>
 			</td>
 		</tr>
 	</table>
@@ -183,25 +186,6 @@
 	      </div>
 	    </div>
 	  </div>
-</div>
-
-<!--model 报废提示-->
-<div class="modal fade" id="destoryModal" tabindex="-1">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">报废夹具</h4>
-			</div>
-			<div class="modal-body">
-				确认报废该夹具吗？
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-				<button type="button" class="btn btn-primary">确定</button>
-			</div>
-		</div>
-	</div>
 </div>
     </div>
     <script src="../../js/jquery.min.js"></script>

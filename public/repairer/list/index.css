@@ -1,14 +1,21 @@
-.table {
-    margin-bottom: 0;
-}
-
 .table a:hover {
     text-decoration: none;
     cursor: pointer;
     color: #0099FF;
 }
 
-.table+nav {
+.table {
+	margin-bottom: 0;
+}
+
+.border nav {
     float: right;
     margin-bottom: -15px;
 }
+
+.border .btn-primary {
+	margin-top: 20px;
+	margin-left: 10px;
+	float: right;
+}
+

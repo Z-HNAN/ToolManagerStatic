@@ -14,7 +14,7 @@
 
 .toolFind .form-inline textarea {
 	width: 300px;
-	margin: 20px 30px 0px 0;
+	margin: 10px 30px 0px 0;
 }
 
 .toolFind button {
@@ -32,7 +32,7 @@
 }
 
 .toolFind form button {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .toolList .table {
@@ -47,5 +47,33 @@
 
 .toolList nav {
 	float: right;
-	margin-bottom: -15px;
+	margin-bottom: -10px;
+}
+
+.content {
+	width: 100%;
+}
+
+@media screen and (max-width: 580px) {
+	/*屏幕宽度小于等于580px才会显示该样式*/
+	.alert {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.input {
+		flex-wrap: wrap;
+	}
+	
+	.input input {
+		width: 45%;
+		margin-top: 10px;
+	}
+	
+	.toolFind .form-inline textarea {
+		width: 100%;
+	}
+	
+	.toolFind form button {
+		float: right;
+	}
 }
