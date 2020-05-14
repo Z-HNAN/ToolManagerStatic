@@ -11,6 +11,9 @@
 - storekeeper(OⅡ)(仓库管理员)
 [https://z-hnan.github.io/ToolManagerStatic/public/storekeeper/tool/index.html](https://z-hnan.github.io/ToolManagerStatic/public/storekeeper/tool/index.html)
 
+- toolChart(夹具图表)
+[https://z-hnan.github.io/ToolManagerStatic/public/toolChart/index.html](https://z-hnan.github.io/ToolManagerStatic/public/toolChart/index.html)
+
 - supervisor(监管员)
 [https://z-hnan.github.io/ToolManagerStatic/public/supervisor/manager/create/index.html](https://z-hnan.github.io/ToolManagerStatic/public/supervisor/manager/create/index.html)
 
@@ -19,6 +22,9 @@
 
 - repairer(维修员)
 [https://z-hnan.github.io/ToolManagerStatic/public/repairer/manager/index.html](https://z-hnan.github.io/ToolManagerStatic/public/repairer/manager/index.html)
+
+- repairerChart(维修员图表)
+[https://z-hnan.github.io/ToolManagerStatic/public/repairerChart/index.html](https://z-hnan.github.io/ToolManagerStatic/public/repairerChart/index.html)
 
 - admin(管理员)
 [https://z-hnan.github.io/ToolManagerStatic/public/admin/user/index.html](https://z-hnan.github.io/ToolManagerStatic/public/admin/user/index.html)
